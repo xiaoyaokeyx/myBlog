@@ -5,6 +5,7 @@
 #include <vector>
 #include <map>
 #include "Item.h"
+#include "Character.h"
 
 // Forward declaration
 class Location;

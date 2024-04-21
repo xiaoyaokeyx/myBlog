@@ -50,7 +50,6 @@ and manually reviewing the code.
 The assignment is to create a basic command-line game using C++ and organise game
 structure using OOP methods.
 The game has a fantasy theme, in a style similar to Dungeons and Dragons, consisting
-1
 of a player that can navigate a series of connected locations (using commands North,
 South, East, West or N,S,E,W). The player can collect items and engage in combat with
 monsters. The player’s score in the game increases when they defeat a monster. The
@@ -197,10 +196,8 @@ the game if necessary.
 修改游戏循环，使其现在能告诉用户所在的位置，以及有哪些出口（N、S、E 或 W）。
 可用的出口（北、南、东或西）。
 如果用户输入一个方向（N、S、E 或 W，或北、南、东或西，或 N、S、E
-或 W），游戏就会计算出该方向是否有出口，如果有，当前位置就会变更为该方向。
-如果有，当前位置就会变更为该位置。
+或 W），游戏就会计算出该方向是否有出口，如果有，当前位置就会变更为该方向。如果有，当前位置就会变更为该位置。
 如果出口不存在，游戏应告诉用户，并保持当前位置。
-位置。
 在这项任务结束时，用户应该能够在游戏中四处浏览，并在必要时退出游戏。
 
 

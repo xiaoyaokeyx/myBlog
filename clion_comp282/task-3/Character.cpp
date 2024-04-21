@@ -1,4 +1,3 @@
-#include "Location.h"
 #include "Character.h"
 
 // Character class methods
@@ -28,6 +27,11 @@ Monster::Monster() { Character(); }
 Monster::Monster(std::string name, int hitPoints) : Character(name, hitPoints) {}
 
 // Player class methods
+Player::Player() {
+    Character();
+    score = 0;
+}
+
 Player::Player(const std::string &name, int hitPoints) : Character(name, hitPoints), score(0) {}
 
 int Player::getScore() const {
@@ -62,10 +66,10 @@ std::vector<Treasure> Player::getTreasures() const {
     return treasures;
 }
 
-void Player::setCurrentLocation(const Location &location) {
+void Player::setCurrentLocation(const Location* location) {
     currentLocation = location;
 }
 
-const Location &Player::getCurrentLocation() const {
+Location* Player::getCurrentLocation() {
     return currentLocation;
 }

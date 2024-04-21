@@ -34,9 +34,10 @@ private:
     std::vector<Weapon> weapons;
     std::vector<Potion> potions;
     std::vector<Treasure> treasures;
-    Location currentLocation;
+    Location* currentLocation;
 
 public:
+    Player();
     Player(const std::string &name, int hitPoints);
 
     int getScore() const;
@@ -50,9 +51,8 @@ public:
     std::vector<Potion> getPotions() const;
     std::vector<Treasure> getTreasures() const;
 
-    void setCurrentLocation(const Location& location);
-    const Location& getCurrentLocation() const;
-
+    void setCurrentLocation(const Location* location);
+    Location* getCurrentLocation();
 };
 
 #endif

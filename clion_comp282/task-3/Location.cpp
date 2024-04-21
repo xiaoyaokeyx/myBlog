@@ -1,4 +1,4 @@
-#include "Character.h" // 间接包含自己的头文件, 以及Item.h
+#include "Location.h"
 
 Location::Location() {}
 
